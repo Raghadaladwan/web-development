@@ -9,7 +9,16 @@ outputs your fortune to the screen like so:
 Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 => "You will be a software engineer in Jordan, and married to Alice with 3 kids."
 */
+function tellFortune(jobTitle,geographicLocation,partnerName,numberOfChildren)
+ 	{
+ 	
+        
+        R="You will be a "+jobTitle+ " in "+geographicLocation+" and married to "+partnerName+" with "+numberOfChildren+" kids ";
+             
+          console.log(R);
+ 	}
 
+tellFortune("engineer","amman","Alice",4);
 
 /*
 2
@@ -23,7 +32,12 @@ outputs the result to the screen like so:
 Ex: calculateDogAge(1);
 => "Your doggie is 7 years old in dog years!"
 */
-
+function calculateDogAge(humanAge)
+ 	{
+          dogAge=humanAge*7;
+          console.log("Your doggie is "+dogAge" years old in dog years!");
+ 	}
+ 	calculateDogAge(5);
 
 /*
 3
@@ -37,6 +51,13 @@ Ex: calculateSupply(30, 3);
 => 'You will need 76650 cups of tea to last you until the ripe old age of 100;
 */
 
+ 	function calculateSupply(age, amount)
+ 	{   var maxAge=100;
+ 	var ahmad=(365*amount)*(100-age)
+
+         console.log("You will need "+ahmad+" to last you until the ripe old age of "+maxAge);
+ 	}
+ 	calculateSupply(30,3);
 
 /*
 4
@@ -47,7 +68,14 @@ and it will return hello + name
 Ex: greet("Jouza")
 => "Hello Jouza"
 */
+function greet(name)
+ 	{
 
+         console.log("Hello "+name) 
+    }
+ 	 
+ greet("Ahmad");
+ greet("Raghad");
 
 /*
 5
@@ -65,7 +93,28 @@ function double('7') {
 }
 */
 
+function double(cat)
+ 	{
+         return 2 * cat;
+     }    
+     
+     double(2);
 
+
+
+    function double(num) 
+    {
+      return 2 * 7 * num;
+   }
+     double(5);
+
+
+
+     function double(x) 
+    {
+      return 2 * x;
+    }
+      double(6);
 
 /*
 6
