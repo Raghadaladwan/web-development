@@ -11,9 +11,9 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 */
 function tellFortune(jobTitle,geographicLocation,partnerName,numberOfChildren)
  	{
- 	
-        
-        R="You will be a "+jobTitle+ " in "+geographicLocation+" and married to "+partnerName+" with "+numberOfChildren+" kids ";
+ 			
+        	
+        	R="You will be a "+jobTitle+ " in "+geographicLocation+" and married to "+partnerName+" with "+numberOfChildren+" kids ";
              
           console.log(R);
  	}
@@ -37,7 +37,7 @@ function calculateDogAge(humanAge)
           dogAge=humanAge*7;
           console.log("Your doggie is "+dogAge" years old in dog years!");
  	}
- 	calculateDogAge(5);
+ 	 calculateDogAge(5);
 
 /*
 3
@@ -53,11 +53,11 @@ Ex: calculateSupply(30, 3);
 
  	function calculateSupply(age, amount)
  	{   var maxAge=100;
- 	var ahmad=(365*amount)*(100-age)
+ 		var ahmad=(365*amount)*(100-age)
 
          console.log("You will need "+ahmad+" to last you until the ripe old age of "+maxAge);
  	}
- 	calculateSupply(30,3);
+ 	 calculateSupply(30,3);
 
 /*
 4
@@ -71,7 +71,7 @@ Ex: greet("Jouza")
 function greet(name)
  	{
 
-         console.log("Hello "+name) 
+         console.log("Hello "+name) 	
     }
  	 
  greet("Ahmad");
@@ -94,7 +94,7 @@ function double('7') {
 */
 
 function double(cat)
- 	{
+ 	 {
          return 2 * cat;
      }    
      
@@ -131,7 +131,19 @@ function (x) double3 {
   return 2 * x;
 
 */
+     function double1(x) {
+        return 2 * x ;
+      }
 
+      function double2 (x)
+      {
+        return 2 * x;
+      }
+
+       function double3(x) double3 
+       {
+        return 2 * x;
+       }
 
 /*
 7
@@ -141,7 +153,11 @@ accept 1 parameter and calculate the cube of this number
 Ex: cube(4)
 => 64
 */
-
+ function cube(num)
+      {
+        return num*3;
+      }
+      cube(4);
 
 /*
 8
@@ -153,7 +169,11 @@ Ex: multiply(3,4)
 Ex: multiply(5,4)
 => 20
 */
-
+   function multiply(num1,num2)
+      {
+      	return num1 * num2; 
+      }
+      multiply(2,3);
 
 /*
 9
@@ -172,7 +192,19 @@ Ex: canIGetADrivingLicense(20)
 => "yes you can"
 
 */
-
+  function canIGetADrivingLicense(age)
+      {
+         	if(age >=20)
+        	{
+               return "yes you can";
+  
+        	}else
+        	{
+        		sum=20-age;
+        		return "please come back after "+sum+" years to get one";
+        	}
+      }
+      canIGetADrivingLicense(15);
 
 /*
 10
@@ -188,7 +220,17 @@ Ex: sameLength("tree","clue")
 Ex: sameLength("tree","car")
 => false
 */
-
+   function sameLength (name1 ,name2)
+      {
+         if(name1.length == name2.length)
+         {
+               return true;
+         }else 
+         {
+         	return false;
+         }
+      }
+      sameLength("hi","h");
 /*
 11
 Write a function called largerNubmer
@@ -201,7 +243,17 @@ Ex: largerNubmer(5,6)
 Ex: largerNubmer(5,3)
 => 5
 */
-
+  function largerNubmer(num1 ,num2)
+       {
+       	 if(num1 >num2)
+       	 {
+       	 	return num1;
+       	 }
+       	 else{
+       	 	return num2;
+       	 }
+       }
+       largerNubmer(5,7);
 
 /*
 12
@@ -222,7 +274,23 @@ Ex: smallerNubmer(5,3,3)
 => 3
 
 */
+   function smallerNubmer(n1 , n2 ,n3)
+       {
+          
+          if(n1<n2 && n1<n3)
+          {
+            return n1;
+          }else if (n2<n1 && n2<n3) {
 
+          	return n2;
+
+          }else
+          {
+          	return n3;
+          }
+
+       }
+       smallerNubmer(10,15,2);
 /*
 13
 Write a function called shorterString
@@ -248,7 +316,28 @@ Ex: shorterString("air","tr","car","github","by")
 => by
 
 */
+    function shorterString(name1 ,name2,name3,name4,name5)
+       {
+          if(name1.length<name2.length &&name1.length< name3.length&&name1.length< name4.length&&name1.length< name5.length)
+          {
+          	return name1;
+          }else if(name2.length<name1.length &&name2.length< name3.length&&name2.length< name4.length&&name2.length< name5.length)
+            {
+                    return name2;
+            }else if(name3.length<name1.length &&name3.length< name2.length&&name3.length< name4.length&&name3.length< name5.length)
+            {
+            	return name3;
+            }else if (name4.length<name1.length &&name4.length< name2.length&&name4.length< name3.length&&name4.length< name5.length) {
+                          	return name4;
+	
+            }
+            else
+            {
+            	return n5;
+            }
+       }
 
+       shorterString('hi','jkkjsf','fsaefsf','fsdfsfsfs','ffffff');
 /*
 14
 Write a function called longerString
@@ -263,7 +352,24 @@ Ex: longerString("air","schoo","car","github")
 
 try all the cases (change the order of the longestString)
 */
+   function longerString(name1 ,name2,name3,name4)
+       {
+          if(name1.length>name2.length &&name1.length> name3.length&&name1.length> name4.length&&name1.length> name5.length)
+          {
+          	return name1;
+          }else if(name2.length>name1.length &&name2.length> name3.length&&name2.length>name4.length&&name2.length> name5.length)
+            {
+                    return name2;
+            }else if(name3.length>name1.length &&name3.length> name2.length&&name3.length> name4.length&&name3.length> name5.length)
+            {
+            	return name3;
+            }else
+            {
+            	return name4;
+            }
+       }
 
+       longerString('hi','jkkjsf','fsaefsf','fsdfsfsfs');
 /*
 15
 Write a function called isEven
@@ -278,6 +384,18 @@ Ex: isEven(2)
 
 */
 
+       function isEven(num)
+       {
+       	if(num%2==0)
+       	{
+       		return true;
+       	} else
+       	{
+       		return false;
+       	}
+
+       }
+       isEven(7);
 
 /*
 16
@@ -292,7 +410,18 @@ Ex: isOdd(5)
 => true
 
 */
+  function isOdd(num)
+       {
+       	if(num%2==0)
+       	{
+       		return false;
+       	} else
+       	{
+       		return true ;
+       	}
 
+       }
+     isOdd(5);
 
 /*
 17
@@ -306,12 +435,20 @@ Ex: positive(-5)
 => 5
 
 */
-
+ function positive(num)
+       {
+            if(num <0)
+            	{
+                     return (num*-1);
+            	}
+            	return num;
+       }
+       positive(-9);
 
 /*
 18
 Write a function called fullName
-that accept two parameters, firstName and lastName,
+that accept two parameters, 0.,
 and returns the firstName and lastName concatenated
 together with a space in between.
 
@@ -321,6 +458,12 @@ Ex: fullName("Alex", "Mercer")
 => "Alex Mercer"
 */
 
+       function fullName(firstName,lastName)
+       {
+
+       	return  firstName +" "+ lastName;
+        }
+        fullName("Raghad" ,"Maher");
 
 /*
 19
@@ -335,7 +478,12 @@ Ex: average(5,7,9,3,5)
 => 5.8
 
 */
+    function average(num1,num2,num3,num4,num5)
+       {
 
+             sum=(num1+num2+num3+num4+num5)/5;
+             return sum;
+       }
 
 /*
 20
@@ -351,7 +499,13 @@ Ex: randomNumber()
 => 0.475
 
 */
+  function randomNumber()
+       {
 
+          return Math.random();
+       }
+
+         randomNumber();
 /*
 21
 Write a function called randomBetweenNumbers
@@ -366,7 +520,23 @@ Ex: randomBetweenNumbers(3,100)
 => 23
 
 */
+ function randomBetweenNumbers(num1,num2)
+       {
+           
+          if(num1>num2)
+          {
+          	max=num1;
+          	min=num2;
+          }else{
+          	max=num2;
+          	min=num1;
+          }
 
+
+          return (Math.random(num1,num2)*(max-1) +min); 
+       }
+
+         randomBetweenNumbers(2,7);
 
 /*
 22
@@ -388,7 +558,22 @@ Ex: scoreInUniversty(3)
 Ex: scoreInUniversty(71)
 => "C"
 */
+ function scoreInUniversty(num)
+       {
+            if(num>=95&& num<=100)
+            	return "A";
+            else if(num>=85&& num<=94)
+            	return "B";
+            else if(num>=70&& num<=84)
+            	return "C";
+            else if(num>=50&& num<=69)
+            	return "D";
+            else if (num>=0&& num<=49) 
+            	return "F";
 
+
+         }  
+         scoreInUniversty(52);
 
 /*
 23
@@ -407,7 +592,14 @@ Ex: counter()
 => 3
 
 */
+  var num=0; 
+       function counter( )
+       {
+       	num++;
 
+        	return num;
+       }
+       counter();
 
 /*
 24
@@ -440,3 +632,12 @@ Ex: resetCounter()
 Ex: counter()
 => 1
 */
+ function resetCounter()
+       {
+       	 var old=num;
+       
+       	console.log(old +" and the counter reset now");
+       	num=0;
+       }
+
+       resetCounter();
